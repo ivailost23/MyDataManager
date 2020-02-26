@@ -1,0 +1,33 @@
+<div class="toolbarComponent">
+  <div class="appTitle">My App</div>
+
+  <div id="menuOptions">
+    <span>
+      <button mat-button [matMenuTriggerFor]="techMenu">Technologies</button>
+      <mat-menu #techMenu="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="techSubMenu">Front End</button>
+        <button mat-menu-item>Back End</button>
+      </mat-menu>
+      <mat-menu #techSubMenu="matMenu">
+        <button mat-menu-item>Angular</button>
+        <button mat-menu-item>React</button>
+        <button mat-menu-item>Vue</button>
+      </mat-menu>
+    </span>
+
+
+    <span>
+      <button mat-button [matMenuTriggerFor]="companyMenu">Company</button>
+      <mat-menu #companyMenu="matMenu">
+        <button mat-menu-item>Products</button>
+        <button mat-menu-item>Services</button>
+        <button mat-menu-item>About</button>
+      </mat-menu>
+    </span>
+
+  </div>
+</div>
+
+
+
+<!-- </mat-toolbar-row> -->

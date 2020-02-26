@@ -1,26 +1,13 @@
-<mat-toolbar color="primary" class="navbar">
-  <!-- <mat-toolbar-row> -->
-    <div>My App</div>
-    <div>
-    <button mat-button [matMenuTriggerFor]="techMenu">Technologies</button>
-      <mat-menu #techMenu="matMenu">
-        <button mat-menu-item [matMenuTriggerFor]="techSubMenu">Front End</button>
-        <button mat-menu-item>Back End</button>
-      </mat-menu>
-      <mat-menu #techSubMenu="matMenu">
-        <button mat-menu-item>Angular</button>
-        <button mat-menu-item>React</button>
-        <button mat-menu-item>Vue</button>
-      </mat-menu>
+<!--
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side">
+    <app-side-nav-bar></app-side-nav-bar>
+  </mat-sidenav>
 
-    <button mat-button [matMenuTriggerFor]="companyMenu">Company</button>
-      <mat-menu #companyMenu="matMenu">
-        <button mat-menu-item>Products</button>
-        <button mat-menu-item>Services</button>
-        <button mat-menu-item>About</button>
-      </mat-menu>
+  <mat-sidenav-content>
+    <app-nav-bar (click)="sidenav.close()"></app-nav-bar>
+    <button (click)="sidenav.toggle()">Toggle</button>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
 
-    </div>
-
-
-  <!-- </mat-toolbar-row> -->
+<app-main-nav></app-main-nav>

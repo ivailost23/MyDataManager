@@ -1,19 +1,13 @@
-// .toolbarComponent {
-//   display: flex;
-// }
 
-// .appTitle {
-//   justify-content: left;
-//   width: 50%;
-// }
-
-// .menuOptions {
-//   justify-content: right;
-//   width: 50%;
-// }
-
-// span {
-//   padding-right: 1 rem;
-// }
-
-
+#appName {
+  width: 50%;
+  text-align: left;
+}
+#menuOptions {
+  width: 50%;
+  text-align: right;
+}
+#horizontal-bar {
+  width: 100%;
+  display: flex;
+}

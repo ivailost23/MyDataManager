@@ -31,4 +31,7 @@ export class MainNavComponent {
     }
   );
 
+  paddingLeft = this.isMobile ? 'padding-left: 0' : 'padding-left: 16px';
+
+
 }

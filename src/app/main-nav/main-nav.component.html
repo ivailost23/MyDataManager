@@ -9,11 +9,13 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary" [ngStyle]="isMobile ? { 'padding-left': '8px' }: { 'padding-left': '16px' }">
       <!-- <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
         *ngIf="isHandset$ | async"> -->
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
-        *ngIf="true">
+        *ngIf="true"
+
+        >
         <mat-icon aria-label='Side nav toggle icon'>menu</mat-icon>
       </button>
       <!-- Add Main Toolbar here -->

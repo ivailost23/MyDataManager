@@ -1,0 +1,18 @@
+mat-toolbar {
+  padding: 2px 2px 2px;
+  display: flex;
+}
+#userIcon {
+  width: 15%;
+}
+#wecomeMsg {
+  font-size: 8px;
+  vertical-align: text-bottom;
+}
+mat-icon {
+  // padding: 0px 0px 0px;
+  height: 100%;
+  width: 100%;
+  // text-align: center;
+  vertical-align: text-bottom;
+}

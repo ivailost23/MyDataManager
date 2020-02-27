@@ -1,5 +1,5 @@
 <div id="horizontal-bar">
-  <div id="appName">
+  <div id="appName"  *ngIf="(isHandset$ | async) === false">
     My Data Marts
   </div>
   <div id="menuOptions">

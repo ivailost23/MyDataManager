@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { WindowSizeService } from '../services/window-size.service';
+import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 
@@ -10,14 +11,24 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 
 export class MainNavComponent {
+  // Original Code => -------------------------------------------------------------------------
+  // isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+  //   .pipe(
+  //     map(result => result.matches),
+  //     shareReplay()
+  //   );
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-    );
-
-  constructor(private breakpointObserver: BreakpointObserver) {
+  // constructor(private breakpointObserver: BreakpointObserver) {
+  // }
+  // Original Code <= -------------------------------------------------------------------------
+  constructor(public windowSizeService: WindowSizeService) {
   }
+  isMobile: boolean;
+  isMobileState = this.windowSizeService.getMobileState().subscribe(
+    data => {
+      this.isMobile = data.matches;
+      console.log('isMobile = ' + this.isMobile);
+    }
+  );
 
 }

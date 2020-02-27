@@ -2,8 +2,8 @@
 
   <!-- <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'push' : 'side'" [opened]="(isHandset$ | async) === false"> -->
-  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'push'" [opened]="false">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="isMobile ? 'dialog' : 'navigation'"
+    [mode]="isMobile ? 'over' : 'push'" [opened]="false">
     <!-- Add Sidenav here -->
     <app-side-nav-bar></app-side-nav-bar>
   </mat-sidenav>
@@ -14,13 +14,14 @@
         *ngIf="isHandset$ | async"> -->
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
         *ngIf="true">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        <mat-icon aria-label='Side nav toggle icon'>menu</mat-icon>
       </button>
       <!-- Add Main Toolbar here -->
       <app-nav-bar></app-nav-bar>
     </mat-toolbar>
     <!-- Add Content Here -->
-    <div *ngIf="isHandset$ | async">53w5</div>
+    <div *ngIf="isMobile">Mobile Screen Detected</div>
+    <div *ngIf="!isMobile">Ful Screen Detected</div>
   </mat-sidenav-content>
 
 </mat-sidenav-container>

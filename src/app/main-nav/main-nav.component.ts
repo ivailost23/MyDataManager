@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 import { WindowSizeService } from '../services/window-size.service';
-import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
 
 @Component({
   selector: 'app-main-nav',
@@ -11,17 +8,7 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 
 export class MainNavComponent {
-  // Original Code => -------------------------------------------------------------------------
-  // isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-  //   .pipe(
-  //     map(result => result.matches),
-  //     shareReplay()
-  //   );
-
-  // constructor(private breakpointObserver: BreakpointObserver) {
-  // }
-  // Original Code <= -------------------------------------------------------------------------
-  constructor(public windowSizeService: WindowSizeService) {
+  constructor(private windowSizeService: WindowSizeService) {
   }
   isMobile: boolean;
   isMobileState = this.windowSizeService.getMobileState().subscribe(
@@ -32,6 +19,26 @@ export class MainNavComponent {
   );
 
   paddingLeft = this.isMobile ? 'padding-left: 0' : 'padding-left: 16px';
-
-
 }
+
+  // Original Code => -------------------------------------------------------------------------
+  // isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+  //   .pipe(
+  //     map(result => result.matches),
+  //     shareReplay()
+  //   );
+
+  // constructor(private breakpointObserver: BreakpointObserver) {
+  // }
+  // Original Code <= -------------------------------------------------------------------------
+
+  // Second Code => -------------------------------------------------------------------------
+  //  constructor(private windowSizeService: WindowSizeService) {
+  // }
+  // isMobileState = this.windowSizeService.getMobileState().subscribe(
+  //   data => {
+  //     this.isMobile = data.matches;
+  //     console.log('isMobile = ' + this.isMobile);
+  //   }
+  // );
+  // Second Code <= -------------------------------------------------------------------------

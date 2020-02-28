@@ -1,14 +1,35 @@
 
-#appName {
-  width: 50%;
-  text-align: left;
-  padding-left: 10px;
-}
-#menuOptions {
-  width: 100%;
-  text-align: right;
-}
-#horizontal-bar {
+.horizontal-bar {
   width: 100%;
   display: flex;
 }
+.app-name {
+  width: 33%;
+  text-align: left;
+  padding-left: 10px;
+}
+.menu-options-small {
+  width: 66%;
+  text-align: right;
+}
+.menu-options-large {
+  width: 33%;
+  text-align: right;
+}
+.logo-container-small {
+  width: 33%;
+  text-align: left;
+}
+.logo-container-large {
+  width: 33%;
+  text-align: center;
+}
+.logo-img-small {
+  height: 25px;
+  vertical-align: middle;
+}
+.logo-img-large {
+  height: 35px;
+  vertical-align: middle;
+}
+

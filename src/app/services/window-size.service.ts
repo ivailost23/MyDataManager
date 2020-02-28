@@ -11,5 +11,4 @@ export class WindowSizeService {
   public getMobileState(): Observable<BreakpointState> {
     return this.breakpointObserver.observe(Breakpoints.Handset);
   }
-
 }

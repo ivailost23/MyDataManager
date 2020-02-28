@@ -1,8 +1,13 @@
-<div id="horizontal-bar">
-  <div id="appName"  *ngIf="(isHandset$ | async) === false">
+<div class="horizontal-bar">
+  <div class="app-name" *ngIf="!isMobile">
     My Data Marts
   </div>
-  <div id="menuOptions">
+
+  <div [class.logo-container-small]="isMobile" [class.logo-container-large]="!isMobile">
+    <img src="../assets/QH_White.png" [class.logo-img-small]="isMobile" [class.logo-img-large]="!isMobile" />
+  </div>
+
+  <div [class.menu-options-small]="isMobile" [class.menu-options-large]="!isMobile">
     <button id="menuOpt" mat-button [matMenuTriggerFor]="techMenu">Technologies</button>
     <mat-menu #techMenu="matMenu">
       <button mat-menu-item [matMenuTriggerFor]="techSubMenu">Front End</button>

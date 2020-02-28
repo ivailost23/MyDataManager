@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { WindowSizeService } from '../services/window-size.service';
+import { WindowSizeService } from '../../services/window-size.service';
 
 @Component({
-  selector: 'app-main-nav',
-  templateUrl: './main-nav.component.html',
-  styleUrls: ['./main-nav.component.scss']
+  selector: 'app-nav-bar',
+  templateUrl: './app-nav-bar.component.html',
+  styleUrls: ['./app-nav-bar.component.scss']
 })
 
-export class MainNavComponent {
+export class AppNavBarComponent {
   constructor(private windowSizeService: WindowSizeService) {
   }
   isMobile: boolean;

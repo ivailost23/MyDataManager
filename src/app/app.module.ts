@@ -5,25 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { NavBarComponent} from './components/nav-bar/nav-bar.component';
-import { SideNavBarComponent } from './components/side-nav-bar/side-nav-bar.component';
+
 // Responsive Nav Bar imports
-import { MainNavComponent } from './main-nav/main-nav.component';
+import { AppNavBarComponent } from './components/app-nav-bar/app-nav-bar.component';
+import { NavBarSideComponent} from './components/nav-bar-side/nav-bar-side.component';
+import { NavBarMainComponent } from './components/nav-bar-main/nav-bar-main.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { AppContentComponent } from './components/app-content/app-content.component';
 // ----------------------------------------------------------
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
-    SideNavBarComponent,
-    MainNavComponent,
-    AppContentComponent
+    AppNavBarComponent,
+    NavBarSideComponent,
+    NavBarMainComponent,
   ],
   imports: [
     BrowserModule,

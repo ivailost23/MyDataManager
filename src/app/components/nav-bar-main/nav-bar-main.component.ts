@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { WindowSizeService } from '../../services/window-size.service';
 
 @Component({
-  selector: 'app-nav-bar',
-  templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.scss']
+  selector: 'app-nav-bar-main',
+  templateUrl: './nav-bar-main.component.html',
+  styleUrls: ['./nav-bar-main.component.scss']
 })
-export class NavBarComponent implements OnInit {
+export class NavBarMainComponent implements OnInit {
   constructor(private windowSizeService: WindowSizeService) {
   }
   isMobile: boolean;

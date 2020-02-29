@@ -3,7 +3,7 @@
   <!-- <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'push' : 'side'" [opened]="(isHandset$ | async) === false"> -->
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="isMobile ? 'dialog' : 'navigation'"
-    [mode]="isMobile ? 'over' : 'push'" [opened]="false">
+    [mode]="isMobile ? 'over' : 'push'" [opened]="true">
 
     <!-- Add Sidenav here -->
     <app-nav-bar-side></app-nav-bar-side>

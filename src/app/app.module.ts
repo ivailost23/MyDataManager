@@ -16,6 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { SignOnComponent } from './components/sign-on/sign-on.component';
 // ----------------------------------------------------------
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MatListModule } from '@angular/material/list';
     AppNavBarComponent,
     NavBarSideComponent,
     NavBarMainComponent,
+    SignOnComponent,
   ],
   imports: [
     BrowserModule,

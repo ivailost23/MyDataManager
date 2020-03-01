@@ -18,6 +18,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { SignOnComponent } from './components/sign-on/sign-on.component';
 // ----------------------------------------------------------
+import { AdalService, AdalGuard, AdalInterceptor } from 'adal-angular4';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,7 @@ import { SignOnComponent } from './components/sign-on/sign-on.component';
     MatIconModule,
     MatListModule
   ],
-  providers: [],
+  providers: [AdalService, AdalGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

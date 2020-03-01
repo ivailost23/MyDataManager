@@ -5,8 +5,8 @@ mat-toolbar {
 #userIcon {
   width: 15%;
 }
-#wecomeMsg {
-  font-size: 8px;
+.welcomeMsg {
+  font-size: 14px;
   vertical-align: text-bottom;
 }
 mat-icon {
@@ -15,4 +15,15 @@ mat-icon {
   width: 100%;
   // text-align: center;
   vertical-align: text-bottom;
+}
+.log-in-container {
+  width: 100%;
+  padding-top: 30px;
+}
+.log-in-container:hover {
+  background-color: #E8EAF6;
+  color: #1A237E;
+}
+.log-in-content {
+  width: 100%;
 }

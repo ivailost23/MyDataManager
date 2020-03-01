@@ -2,8 +2,8 @@
   <span id="userIcon">
     <mat-icon>person</mat-icon>
   </span>
-  <span id="welcomeMsg">
-    Hello, Evo!
+  <span class="welcomeMsg">
+    {{userName}}
   </span>
 
 </mat-toolbar>
@@ -15,6 +15,15 @@
   <a mat-list-item href="#">Data Dictionary</a>
   <a mat-list-item href="#">Applications</a>
   <a mat-list-item href="#">Reports</a>
+<br>
+  <!-- <div class="log-in-container"> -->
+    <!-- <button mat-button class="log-in-content"> -->
+      <a mat-list-item class="log-in-container">
+       <app-sign-on class="log-in-content"></app-sign-on>
+      </a>
 
-  <app-sign-on></app-sign-on>
+    <!-- </button> -->
+  <!-- </div> -->
+
+
 </mat-nav-list>

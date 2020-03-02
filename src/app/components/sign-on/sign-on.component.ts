@@ -24,7 +24,7 @@ export class SignOnComponent implements OnInit {
         } else {
           this.signedIn = false;
           this.userId = 'None';
-          this.signInOutButton = 'SIGN IN';
+          this.signInOutButton = 'SIGN IN!';
         }
       },
       error => console.log(error)

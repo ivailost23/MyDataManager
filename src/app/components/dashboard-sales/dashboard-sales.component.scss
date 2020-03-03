@@ -1,0 +1,32 @@
+// .flex-grid {
+//   display: block;
+// }
+.top {
+  display: flex;
+  // width: 100%;
+  // height: 100%;
+}
+.bottom {
+  display: flex;
+  // width: 100%;
+  // height: 100%;
+}
+.quadrant {
+  width: 50%;
+}
+h3 {
+  text-align: center;
+}
+@media (max-width: 400px) {
+  .top {
+    display: block;
+    // width: 100%;
+  }
+  .bottom {
+    display: block;
+    // width: 100%;
+  }
+  .quadrant {
+    width: 100%;
+  }
+}

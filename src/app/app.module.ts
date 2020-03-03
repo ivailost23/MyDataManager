@@ -19,6 +19,11 @@ import { MatListModule } from '@angular/material/list';
 import { SignOnComponent } from './components/sign-on/sign-on.component';
 // ----------------------------------------------------------
 import { AdalService, AdalGuard, AdalInterceptor } from 'adal-angular4';
+import { ChartComponent } from './components/chart/chart.component';
+import { DashboardSalesComponent } from './components/dashboard-sales/dashboard-sales.component';
+import { Chart2Component } from './components/chart2/chart2.component';
+import { Chart3Component } from './components/chart3/chart3.component';
+import { Chart4Component } from './components/chart4/chart4.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +32,11 @@ import { AdalService, AdalGuard, AdalInterceptor } from 'adal-angular4';
     NavBarSideComponent,
     NavBarMainComponent,
     SignOnComponent,
+    ChartComponent,
+    DashboardSalesComponent,
+    Chart2Component,
+    Chart3Component,
+    Chart4Component,
   ],
   imports: [
     BrowserModule,

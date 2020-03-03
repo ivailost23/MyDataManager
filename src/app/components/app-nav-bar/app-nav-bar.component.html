@@ -27,13 +27,13 @@
     <!-- <div *ngIf="isMobile">Mobile Screen Detected</div>
     <div *ngIf="!isMobile">Ful Screen Detected</div> -->
 
-    <!-- <div class="log-on-container">
+    <div class="log-on-container" *ngIf="!signedIn">
       <button mat-button class="log-on-button">
         <app-sign-on></app-sign-on>
       </button>
-    </div> -->
+    </div>
 
-    <app-dashboard-sales>
+    <app-dashboard-sales *ngIf="signedIn">
 
     </app-dashboard-sales>
 
